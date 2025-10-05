@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+/* Reset básico */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+/* fundo e centralização */
+body {
+    background: linear-gradient(135deg, #1a1a40, #2b2b80);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* Caontainer principal*/
+.home-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    backdrop-filter: blur(6px);
+}
+
+/* Título */
+.home-container h1 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+/* Input */
+#cadastro-form input {
+    width: 100%;
+    padding: 0,8rem;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Botão */
+#cadastro-form button {
+    background: #00c8ff;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s, color0.3;
+}
+
+/* Efeito hover */
+    #cadastro-form button:hover {
+        background: #00a0cc;
+    }
