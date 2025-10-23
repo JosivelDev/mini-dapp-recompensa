@@ -1,8 +1,8 @@
-const botaoCadastrar = document.getElementById("botaoCadastrar");
-const nomeUsuarioInput = document.getElementById("nomeUsuario");
+const inputNome = document.getElementById("inputNome");
+const btnCadastrar = document.getElementById("btnCadastrar");
 
-botaoCadastrar.addEventListener("click", () => {
-    const nome = nomeUsuarioInput.ariaValueMax.trim();
+btnCadastrar.addEventListener("click", () => {
+    const nome = inputNome.value.trim();
     
     if (nome === ""){
         alert("Por favor, digite seu nome!")
@@ -13,5 +13,5 @@ botaoCadastrar.addEventListener("click", () => {
     localStorage.setItem("nomeUsuario", nome);
 
     //Redireciona para a página inicial DApp
-    window.location.href = "index.html";
+    window.location.href = "main.html";
 })
